@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Sistema de Contatos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-screen" class="card login-screen">
+    <h2>Login</h2>
+    <input type="password" id="password" placeholder="Digite a senha" />
+    <button onclick="fazerLogin()">Entrar</button>
+    <p class="dica">Senha padrão: <strong>1234</strong></p>
+  </div>
+
+  <div id="main-app" style="display: none;">
+    <header>
+      <h1>Gerenciador de Contatos</h1>
+      <p>Organize seus contatos de forma rápida e eficiente</p>
+      <button id="modo-btn">🌙 Modo Escuro</button>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Adicionar / Editar Contato</h2>
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Nome" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="tel" id="phone" placeholder="Telefone" required />
+          <button type="submit" id="submit-btn">Cadastrar</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Contatos Cadastrados</h2>
+        <input type="text" id="search" placeholder="Buscar contato..." />
+        <ul id="contact-list"></ul>
+        <button id="export-btn">📁 Exportar Contatos</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 - Projeto de TCC - Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
