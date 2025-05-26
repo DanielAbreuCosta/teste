@@ -1,151 +1,152 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
-  color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-body.dark {
-  background: #121212;
-  color: #eee;
-}
-
-header {
-  text-align: center;
-  margin: 2rem 0 1rem;
-}
-
-#modo-btn {
-  margin-top: 10px;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  border: none;
-  background-color: #ffeb3b;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-main {
-  width: 90%;
-  max-width: 600px;
-  flex: 1;
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-input {
-  padding: 0.7rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-}
-
-button {
-  padding: 0.7rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: #00e676;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #00c853;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: rgba(255, 255, 255, 0.15);
-  margin-bottom: 0.8rem;
-  padding: 1rem;
-  border-radius: 0.7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.actions {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.edit-btn,
-.delete-btn {
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: white;
-  transition: transform 0.2s;
-}
-
-.edit-btn:hover {
-  color: #ffeb3b;
-  transform: scale(1.2);
-}
-
-.delete-btn:hover {
-  color: #f44336;
-  transform: scale(1.2);
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-.login-screen {
-  margin-top: 100px;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  text-align: center;
-  width: 300px;
-}
-
-.dica {
-  font-size: 0.8rem;
-  margin-top: 10px;
-  color: #ccc;
-}
-
-input#search {
-  margin: 1rem 0;
-  width: 100%;
-  padding: 0.6rem;
-  border-radius: 0.5rem;
-  border: none;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  body.dark {
+    background: #121212;
+    color: #eee;
+  }
+  
+  header {
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  #modo-btn {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #ffeb3b;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 600px;
+    flex: 1;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  input {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #00e676;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00c853;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.15);
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s;
+  }
+  
+  .edit-btn:hover {
+    color: #ffeb3b;
+    transform: scale(1.2);
+  }
+  
+  .delete-btn:hover {
+    color: #f44336;
+    transform: scale(1.2);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-screen {
+    margin-top: 100px;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .dica {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  input#search {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: none;
+  }
+  
